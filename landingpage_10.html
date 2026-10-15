@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio PKL - New Salsyabila Septia Ramadhani</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fbf7ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+        }
+        .bg-gradient-soft {
+            background: radial-gradient(circle at top left, #f3e8ff 0%, #fae8ff 35%, #f8fafc 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-soft text-slate-700 font-sans antialiased min-h-screen selection:bg-purple-200 selection:text-purple-900">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-purple-100/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-lg shadow-md shadow-purple-200 group-hover:scale-105 transition-transform">
+                    NS
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-800 text-base leading-tight group-hover:text-purple-600 transition-colors">New Salsyabila</span>
+                    <span class="text-xs text-purple-600 font-medium">Siswa RPL - Calon Peserta PKL</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-purple-600 transition-colors">Tentang Saya</a>
+                <a href="#skills" class="hover:text-purple-600 transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-purple-600 transition-colors">Proyek</a>
+                <a href="#certificates" class="hover:text-purple-600 transition-colors">Sertifikat</a>
+                <a href="#contact" class="hover:text-purple-600 transition-colors">Kontak</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold shadow-sm shadow-purple-200 transition-all hover:shadow-md hover:shadow-purple-300">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+                <span>Hubungi Saya</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-16 md:pt-40 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100/80 text-purple-700 text-xs font-semibold tracking-wide border border-purple-200/60">
+                    <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+                    Siap Mengikuti Praktik Kerja Lapangan (PKL)
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    Halo, Saya <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">New Salsyabila</span> Septia Ramadhani
+                </h1>
+
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+                    Siswa SMK jurusan <strong class="text-purple-700 font-semibold">Rekayasa Perangkat Lunak (RPL)</strong> yang berdomisili di <span class="text-slate-800 font-medium">Jember, Jawa Timur</span>. Memiliki ketertarikan mendalam pada pengembangan <strong class="text-slate-800">Web Development</strong> (Front-End & Back-End) serta perancangan antarmuka <strong class="text-slate-800">UI/UX Design</strong> yang estetik dan intuitif.
+                </p>
+
+                <div class="pt-2 flex flex-wrap items-center gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold text-sm shadow-lg shadow-purple-200 transition-all hover:-translate-y-0.5">
+                        Lihat Proyek Saya
+                    </a>
+                    <a href="#certificates" class="px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm border border-purple-100 shadow-sm transition-all hover:-translate-y-0.5">
+                        Lihat Sertifikat
+                    </a>
+                </div>
+
+                <!-- Info Singkat Quick Stats -->
+                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-purple-100/80">
+                    <div>
+                        <p class="text-2xl font-bold text-purple-700">6+</p>
+                        <p class="text-xs text-slate-500 font-medium">Proyek Selesai</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-purple-700">10+</p>
+                        <p class="text-xs text-slate-500 font-medium">Tech & Tools</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-purple-700">RPL</p>
+                        <p class="text-xs text-slate-500 font-medium">Rekayasa Perangkat Lunak</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-sm">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-purple-400 to-pink-300 rounded-3xl blur-xl opacity-40"></div>
+                    <div class="relative glass-card p-6 rounded-3xl shadow-xl space-y-6 text-center border border-white/80">
+                        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-purple-500 to-indigo-400 text-white flex items-center justify-center font-bold text-3xl shadow-lg shadow-purple-200 border-4 border-white">
+                            NS
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-800">New Salsyabila S. R.</h3>
+                            <p class="text-xs text-purple-600 font-semibold mt-1">Junior Web Developer & UI/UX</p>
+                        </div>
+                        
+                        <div class="space-y-2 text-left text-xs text-slate-600 bg-white/60 p-4 rounded-2xl border border-purple-50">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-graduation-cap text-purple-500 w-4"></i>
+                                <span>Jurusan Rekayasa Perangkat Lunak</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-location-dot text-purple-500 w-4"></i>
+                                <span>Jember, Jawa Timur, Indonesia</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-purple-500 w-4"></i>
+                                <span class="truncate">salsyabilaseptia07@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center gap-3 pt-1">
+                            <a href="https://github.com/salsyabila07" target="_blank" class="w-9 h-9 rounded-full bg-slate-100 hover:bg-purple-600 hover:text-white flex items-center justify-center text-slate-600 transition-colors">
+                                <i class="fa-brands fa-github text-sm"></i>
+                            </a>
+                            <a href="https://wa.me/6281358449750" target="_blank" class="w-9 h-9 rounded-full bg-emerald-50 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-emerald-600 transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Keahlian & Teknologi</h2>
+            <p class="text-sm text-slate-600 mt-2">Teknologi dan perangkat lunak yang telah saya pelajari selama di SMK jurusan RPL.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Front-End -->
+            <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4 text-lg">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="font-bold text-slate-800 mb-3">Front-End Development</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">HTML5</span>
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">CSS3</span>
+                    <span class="px-3 py-1 rounded-lg bg-purple-50 border border-purple-200 text-xs font-semibold text-purple-700">Tailwind CSS</span>
+                    <span class="px-3 py-1 rounded-lg bg-purple-50 border border-purple-200 text-xs font-semibold text-purple-700">Bootstrap</span>
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Back-End -->
+            <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4 text-lg">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h3 class="font-bold text-slate-800 mb-3">Back-End & Database</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-indigo-50 border border-indigo-200 text-xs font-semibold text-indigo-700">PHP</span>
+                    <span class="px-3 py-1 rounded-lg bg-red-50 border border-red-200 text-xs font-semibold text-red-700">Laravel</span>
+                    <span class="px-3 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-700">Node.js</span>
+                    <span class="px-3 py-1 rounded-lg bg-sky-50 border border-sky-200 text-xs font-semibold text-sky-700">MySQL Database</span>
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">Java</span>
+                </div>
+            </div>
+
+            <!-- UI/UX & Design -->
+            <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-1">
+                <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center mb-4 text-lg">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3 class="font-bold text-slate-800 mb-3">UI/UX & Desain</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-pink-50 border border-pink-200 text-xs font-semibold text-pink-700">UI/UX Design</span>
+                    <span class="px-3 py-1 rounded-lg bg-purple-50 border border-purple-200 text-xs font-semibold text-purple-700">Figma</span>
+                    <span class="px-3 py-1 rounded-lg bg-sky-50 border border-sky-200 text-xs font-semibold text-sky-700">Canva</span>
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">Wireframing</span>
+                    <span class="px-3 py-1 rounded-lg bg-white border border-purple-100 text-xs font-semibold text-slate-700 shadow-2xs">Prototyping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Portofolio Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Proyek Portofolio</h2>
+                <p class="text-sm text-slate-600 mt-1">Daftar aplikasi web dan desain UI/UX yang telah saya kerjakan.</p>
+            </div>
+            
+            <!-- Filter Proyek -->
+            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                <button onclick="filterProjects('all')" class="project-filter-btn active px-4 py-2 rounded-xl bg-purple-600 text-white transition-all shadow-xs">Semua</button>
+                <button onclick="filterProjects('web')" class="project-filter-btn px-4 py-2 rounded-xl bg-white text-slate-600 hover:bg-purple-50 border border-purple-100 transition-all">Web App</button>
+                <button onclick="filterProjects('uiux')" class="project-filter-btn px-4 py-2 rounded-xl bg-white text-slate-600 hover:bg-purple-50 border border-purple-100 transition-all">UI/UX Design</button>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Proyek 1: Data Guru -->
+            <div class="project-card web glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Data Guru" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop', 'Sistem Pengelolaan Data Guru (CRUD)')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-purple-600 bg-purple-100 px-2.5 py-0.5 rounded-md">Web App</span>
+                        <span class="text-xs text-slate-400">Localhost PHP</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">Sistem Data Guru (CRUD)</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Aplikasi pengelolaan data guru berbasis web dengan fitur Tambah Data, Edit, Cari (NIP/Nama/Mapel), serta Hapus data.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">PHP</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">MySQL</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 2: Kriya Nusantara -->
+            <div class="project-card uiux glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop" alt="Kriya Nusantara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop', 'Kriya Nusantara - UI/UX Design')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-pink-600 bg-pink-100 px-2.5 py-0.5 rounded-md">UI/UX Design</span>
+                        <span class="text-xs text-slate-400">Figma Prototype</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">Kriya Nusantara Prototype</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Desain antarmuka landing page modern & gelap untuk platform karya seni kriya tradisional Indonesia berbasis Figma.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-pink-50 text-pink-700">Figma</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-pink-50 text-pink-700">UI/UX</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-pink-50 text-pink-700">Wireframing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 3: RuangPost -->
+            <div class="project-card web glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=800&auto=format&fit=crop" alt="RuangPost" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=800&auto=format&fit=crop', 'RuangPost - Web App')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-purple-600 bg-purple-100 px-2.5 py-0.5 rounded-md">Web App</span>
+                        <span class="text-xs text-slate-400">Laravel Framework</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">RuangPost Platform</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Website berbagi cerita alam dan artikel inspiratif bertema "Alam bukan latar. Ia rumah" yang dibangun dengan Laravel.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-red-50 text-red-700">Laravel</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">Tailwind</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 4: Savoria Fine Dining -->
+            <div class="project-card web glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Savoria Restaurant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop', 'Savoria Fine Dining Landing Page')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-purple-600 bg-purple-100 px-2.5 py-0.5 rounded-md">Web App</span>
+                        <span class="text-xs text-slate-400">Front-End</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">Savoria Fine Dining Page</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Landing page elegan restoran fine dining dengan fitur reservasi meja, ulasan, serta tampilan menu eksklusif.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-amber-50 text-amber-700">HTML/CSS</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">JavaScript</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">Responsive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 5: SmartToko -->
+            <div class="project-card web glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1556742049-0a6756595316?q=80&w=800&auto=format&fit=crop" alt="SmartToko Laravel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1556742049-0a6756595316?q=80&w=800&auto=format&fit=crop', 'SmartToko - Web Toko Online')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-purple-600 bg-purple-100 px-2.5 py-0.5 rounded-md">Web App</span>
+                        <span class="text-xs text-slate-400">Laravel Project</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">SmartToko E-Commerce</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Aplikasi toko online sederhana untuk praktikum Laravel yang menampilkan katalog produk, deskripsi, dan testimoni.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-red-50 text-red-700">Laravel</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-sky-50 text-sky-700">Bootstrap</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">Blade View</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyek 6: Donghua Realm -->
+            <div class="project-card uiux glass-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-white">
+                <div class="relative overflow-hidden bg-slate-100 h-48">
+                    <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop" alt="Donghua Realm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=800&auto=format&fit=crop', 'Donghua Realm - UI/UX Concept')" class="w-10 h-10 rounded-full bg-white text-purple-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] uppercase tracking-wider font-bold text-pink-600 bg-pink-100 px-2.5 py-0.5 rounded-md">UI/UX Design</span>
+                        <span class="text-xs text-slate-400">Figma Concept</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base group-hover:text-purple-600 transition-colors">Donghua Realm Streaming App</h3>
+                    <p class="text-xs text-slate-600 line-clamp-2">Desain konsep platform streaming donghua / xianxia dengan fitur rating, episode tracker, serta mode tampilan 4K 120FPS.</p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-purple-50">
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-pink-50 text-pink-700">Figma</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">UI Concept</span>
+                        <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-purple-50 text-purple-700">Dark Aesthetic</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sertifikat Section -->
+    <section id="certificates" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Sertifikat & Pelatihan</h2>
+            <p class="text-sm text-slate-600 mt-2">Sertifikat kelulusan kelas pelatihan pengembangan web yang telah saya peroleh.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto">
+            <!-- Sertifikat GETSKILL Utama -->
+            <div class="glass-card rounded-3xl overflow-hidden shadow-md border border-purple-100 p-6 sm:p-8 space-y-6">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-purple-100 pb-4">
+                    <div>
+                        <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold">VERIFIED CERTIFICATE</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-2">Pemrograman Front End Web dengan Bootstrap</h3>
+                        <p class="text-xs text-slate-500">Penerbit: <strong class="text-slate-700">Getskill.id</strong> (CEO: Afrizal Himawan)</p>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <span class="text-xs font-semibold text-slate-400 block">No. Sertifikat:</span>
+                        <span class="text-xs font-mono font-bold text-purple-700">12202605170976</span>
+                    </div>
+                </div>
+
+                <!-- Preview Gambar Sertifikat -->
+                <div class="relative rounded-2xl overflow-hidden border border-purple-100 bg-purple-50 shadow-inner group">
+                    <img src="https://images.unsplash.com/photo-1589330694653-aded6fac7716?q=80&w=1000&auto=format&fit=crop" alt="Sertifikat GetSkill Front End Bootstrap - New Salsyabila Septia R." class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <button onclick="zoomImage('https://images.unsplash.com/photo-1589330694653-aded6fac7716?q=80&w=1000&auto=format&fit=crop', 'Sertifikat Front End Bootstrap - Getskill.id')" class="px-5 py-2.5 rounded-full bg-white text-purple-700 font-semibold text-xs shadow-lg flex items-center gap-2 hover:bg-purple-50 transition-colors">
+                            <i class="fa-solid fa-expand"></i> Perbesar Sertifikat
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4 text-xs text-slate-600 bg-white/70 p-4 rounded-xl border border-purple-50">
+                    <div>
+                        <span class="text-slate-400 block font-medium">Diberikan Kepada:</span>
+                        <strong class="text-slate-800 text-sm font-bold">New Salsyabila Septia R.</strong>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 block font-medium">Masa Berlaku:</span>
+                        <strong class="text-slate-800 text-sm font-bold">Hingga 17 Mei 2029</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Langsung Section (Tanpa Form) -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 shadow-md border border-purple-100 relative overflow-hidden text-center max-w-3xl mx-auto space-y-8">
+            <div class="space-y-3">
+                <span class="px-3.5 py-1.5 rounded-full bg-purple-100 text-purple-700 text-xs font-bold">INFORMASI KONTAK</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Tertarik Menerima Saya PKL?</h2>
+                <p class="text-sm text-slate-600 max-w-xl mx-auto">
+                    Silakan hubungi saya secara langsung melalui kontak di bawah ini. Saya siap berkontribusi penuh dalam tim pengembangan software Anda.
+                </p>
+            </div>
+
+            <!-- Kartu Kontak Grid -->
+            <div class="grid sm:grid-cols-2 gap-4 text-left">
+                <!-- Telepon / WhatsApp -->
+                <a href="https://wa.me/6281358449750" target="_blank" class="p-5 rounded-2xl bg-white border border-purple-100 hover:border-purple-300 transition-all shadow-2xs hover:shadow-md group flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 font-medium block">Telepon / WhatsApp</span>
+                        <strong class="text-sm text-slate-800 font-bold group-hover:text-emerald-600 transition-colors">081358449750</strong>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/salsyabila07" target="_blank" class="p-5 rounded-2xl bg-white border border-purple-100 hover:border-purple-300 transition-all shadow-2xs hover:shadow-md group flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 font-medium block">GitHub Profile</span>
+                        <strong class="text-sm text-slate-800 font-bold group-hover:text-purple-600 transition-colors">github.com/salsyabila07</strong>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <div onclick="copyToClipboard('salsyabilaseptia07@gmail.com')" class="p-5 rounded-2xl bg-white border border-purple-100 hover:border-purple-300 transition-all shadow-2xs hover:shadow-md group flex items-center gap-4 cursor-pointer">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <span class="text-xs text-slate-400 font-medium block">Email (Salin Alamat)</span>
+                        <strong class="text-sm text-slate-800 font-bold group-hover:text-purple-600 transition-colors truncate block">salsyabilaseptia07@gmail.com</strong>
+                    </div>
+                </div>
+
+                <!-- Lokasi -->
+                <div class="p-5 rounded-2xl bg-white border border-purple-100 shadow-2xs flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 font-medium block">Lokasi Domisili</span>
+                        <strong class="text-sm text-slate-800 font-bold">Jember, Jawa Timur, Indonesia</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-purple-100/60 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; 2026 <strong>New Salsyabila Septia Ramadhani</strong>. Portofolio PKL Rekayasa Perangkat Lunak.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Zoom Foto Image -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl p-2">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-slate-900/70 text-white flex items-center justify-center hover:bg-slate-900 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="p-2">
+                <img id="modalImg" src="" alt="Zoom Image" class="w-full h-auto max-h-[80vh] object-contain rounded-xl">
+                <p id="modalCaption" class="text-center text-sm font-semibold text-slate-700 mt-3 pb-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript Filter & Zoom Modal -->
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.project-filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-purple-600', 'text-white', 'active');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+
+            event.target.classList.remove('bg-white', 'text-slate-600');
+            event.target.classList.add('bg-purple-600', 'text-white', 'active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        function zoomImage(src, caption) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCaption').innerText = caption;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert('Alamat email ' + text + ' telah disalin ke clipboard!');
+        }
+
+        // Close modal when pressing ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
